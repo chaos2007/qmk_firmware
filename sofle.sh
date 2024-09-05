@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # COMMON_BUILD_COMMANDS='-kb sofle/keyhive -km manna-harbour_miryoku -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=COLEMAKDH -e MIRYOKU_TAP=QWERTY -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_CLIPBOARD=WIN -e MIRYOKU_LAYERS=FLIP'
-COMMON_BUILD_COMMANDS='-kb sofle/keyhive -km manna-harbour_miryoku -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_NAV=VI'
+# COMMON_BUILD_COMMANDS='-kb sofle/keyhive -km manna-harbour_miryoku -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_NAV=VI'
+COMMON_BUILD_COMMANDS='-kb sofle/keyhive -km rgb_default'
 COMPILE="qmk compile $COMMON_BUILD_COMMANDS"
 FLASH_LEFT="qmk flash $COMMON_BUILD_COMMANDS -bl dfu-split-left"
 FLASH_RIGHT="qmk flash $COMMON_BUILD_COMMANDS -bl avrdude-split-right"
